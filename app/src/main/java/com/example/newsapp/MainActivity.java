@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerAdapter.O
     }
 
     private void getDataFromApi(){
-            serviceGenerator.getApi().getPosts("IN", "3b14f312dd064d4c8bcdfcbeadcdf39b")
+            serviceGenerator.getApi().getPosts("IN", "apikey")
                     .enqueue(new Callback<ResponseModel>() {
                         @Override
                         public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
